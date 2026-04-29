@@ -21,7 +21,7 @@ int main() {
                 }
             }
         }
-        cout << r << "\n";
+        cout << r << endl ;
     }
     return 0;
 }
