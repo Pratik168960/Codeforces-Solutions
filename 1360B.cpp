@@ -24,6 +24,6 @@ int main() {
             d = min(d, a[i] - a[i - 1]);
             
         cout << d << '\n';
-    }
+    } 
     return 0;
 }
