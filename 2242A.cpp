@@ -4,31 +4,28 @@
 
 
 #include <iostream>
-using namespace std ;
 
+using namespace std;
 
 int main() {
     
-    
     int t;
+    cin >> t;
     
-
     while (t--) {
-        
-        int k;
+    
+        int k, c, c2 = 0, c3 = 0;
         cin >> k;
         
-        int c2 = 0, c3 = 0;
-        
-        for (int i = 0; i < k; i++) {
-            int c;
+        while (k--) {
             cin >> c;
-            if (c >= 2) c2++;
-            if (c >= 3) c3++;
+            if (c > 1) c2++;
+            if (c > 2) c3++;
         }
         
-        if (c3 > 0 || c2 > 1) cout << "YES" << endl ;
-        else cout << "NO" << endl ;
+        if (c3 > 0 || c2 > 1) cout << "YES\n";
+        else cout << "NO\n";
+    
     }
     
     return 0;
