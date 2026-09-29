@@ -1,0 +1,32 @@
+// Codeforces Problem 2238B
+// Status: Accepted
+// Language: C++
+
+
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    
+    int t;
+    cin >> t;
+    
+    while (t--) {
+        
+        long long n;
+        cin >> n;
+        
+        long long ans = 0;
+        
+        for (long long b = 1; b <= n; b++) {
+            long long k = n / b;
+            ans += k * k;
+        }
+        
+        cout << ans << endl ;
+    }
+    
+    return 0;
+}
